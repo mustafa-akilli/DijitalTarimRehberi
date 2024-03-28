@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/header2.css">
+
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Ürünler</title>
+</head>
+<body>
+    
+    <%- include("partials/header2") %>
+    <div>
+        <section>
+          <header class="row">
+            <fieldset class="small-12 fieldset">
+              <legend>Şehirler</legend>
+              <div class="row">
+                <div class="column input-group">
+                  <input id="search-input" class="input-group-field" type="text" placeholder="search">
+                  <span class="input-group-label"><i class="fa fa-search"></i></span>
+                </div>
+                <label class="column small-2">
+                  <select id="sort-input">
+                    <option value="">Sırala</option>
+                    <option value="player_min">Z-A</option>
+                    <option value="player_max">A-Z</option>
+                  </select>
+                </label>
+                <div class="column">
+      
+                  <div class="row">
+                    <div class="switch tiny column">
+                      <input class="switch-input" id="expansion-switch" type="checkbox" name="expansion-switch">
+                      <label class="switch-paddle" for="expansion-switch"></label>
+                      <span class="switch-inline-label">Show Expansions</span>
+                    </div>
+                    <div class="switch tiny column">
+                      <input class="switch-input" id="sale-switch" type="checkbox" name="sale-switch">
+                      <label class="switch-paddle" for="sale-switch"></label>
+                      <span class="switch-inline-label">On Sale</span>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </fieldset>
+          </header>
+          <section class="row">
+      <!--       <p class="lead medium-expand text-center">
+              <i class="fa fa-warning"></i> No games matching that criteria
+            </p> -->
+            <ul id="game-list" class="row medium-expand no-bullet">
+            </ul>
+          </section>
+        </section>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col12">
+                <% urunler.forEach(urun => { %>
+                    <%- include("partials/sehir" , urun) %>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+    <%- include("partials/footer") %>
+      
+        
+</body>
+</html>
