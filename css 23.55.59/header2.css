@@ -1,0 +1,71 @@
+/* Header Top (Top Bar) */
+.header-top {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Header Top Container */
+.container {
+    display: flex;
+    justify-content: center; /* Sağa ve sola yaslama */
+    align-items: center;
+    width: 100%; /* Container'ın genişliği 100% olmalı */
+}
+
+/* Sağ taraftaki menüler (Call, Wishlist, vb.) */
+.header-right .top-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+
+.header-right .top-menu ul li {
+    margin-right: 20px;
+}
+
+.header-right .top-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Call: +0123 456 789 metni tasarımı */
+.header-right .top-menu a.call {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+/* Wishlist metni tasarımı */
+.header-right .top-menu a.wishlist {
+    position: relative;
+}
+
+.header-right .top-menu a.wishlist span {
+    background-color: #ff5722;
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+/* Diğer menülerin tasarımı */
+.header-right .top-menu a:not(.call):not(.wishlist) {
+    font-weight: 400;
+}
+
+/* Hover efekti (üzerine gelindiğinde) */
+.header-right .top-menu a:hover {
+    color: #ff5722;
+}
+
+/* Icon (simge) tasarımı */
+.header-right .top-menu a i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+

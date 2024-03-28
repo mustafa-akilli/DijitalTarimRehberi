@@ -1,0 +1,82 @@
+/* Footer Stili */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-middle {
+    padding: 20px 0;
+    border-bottom: 1px solid #555;
+}
+
+.footer-logo {
+    max-width: 105px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.widget-about p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.widget-call {
+    font-size: 16px;
+}
+
+.widget-call a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.widget-call a:hover {
+    text-decoration: underline;
+}
+
+/* Widget Başlıkları */
+.widget-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Widget Liste Öğeleri */
+.widget-list {
+    list-style: none;
+    padding: 0;
+  
+}
+
+.widget-list li {
+    margin-bottom: 10px;
+}
+
+.widget-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.widget-list a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Alt Bölümü */
+.footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-copyright {
+    font-size: 14px;
+}
+
+/* Ödeme Yöntemleri Logosu */
+.footer-payments img {
+    max-width: 272px;
+    height: auto;
+    margin-top: 10px;
+}
